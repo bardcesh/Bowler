@@ -125,7 +125,7 @@ wk <- wk %>%
   )
 
 # Find latest date in .csv file
-max_date <- max(wk$YMD)
+max_date <- min(wk$YMD)
 
 # Do a call to API to get rest of data
 # making time floor to start of hour so that it does not add partial hours to the spreadhseet
